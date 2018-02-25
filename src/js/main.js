@@ -1,10 +1,10 @@
 const toggleClassMenu = () =>{
 	const hamburger = document.querySelector('.hamburger');
-	const menu = document.querySelector('.menu');
+	const nav = document.querySelector('.navigation');
 
 	hamburger.addEventListener('click', ()=>{
 		hamburger.classList.toggle('is-active');
-		menu.classList.toggle('mobile-menu');
+		nav.classList.toggle('mobile-menu');
 	});
 };
 

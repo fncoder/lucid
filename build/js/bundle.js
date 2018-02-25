@@ -2,11 +2,11 @@
 
 var toggleClassMenu = function toggleClassMenu() {
 	var hamburger = document.querySelector('.hamburger');
-	var menu = document.querySelector('.menu');
+	var nav = document.querySelector('.navigation');
 
 	hamburger.addEventListener('click', function () {
 		hamburger.classList.toggle('is-active');
-		menu.classList.toggle('mobile-menu');
+		nav.classList.toggle('mobile-menu');
 	});
 };
 
