@@ -20,6 +20,11 @@ color: #ffffff;
 
 .testimonials-slider-boxes{
 outline: 0;
+  &:focus{
+    .testimonials-box__text, .testimonials-box-authors__name, .testimonials-box-authors__position{
+    text-shadow: 0 0 12px rgba(255,255,255,0.5);
+    }
+  }
 }
 
 .testimonials-box{

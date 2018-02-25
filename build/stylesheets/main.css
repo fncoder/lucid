@@ -162,7 +162,9 @@ body {
 
 .features-list {
   padding: 2.28125em 0 2.40625em;
-  border-bottom: 1px solid #ededed; }
+  border-bottom: 1px solid #ededed;
+  width: 90%;
+  margin: 0 auto; }
 
 .features-header__title {
   padding-top: 0.5625em; }
@@ -302,6 +304,8 @@ body {
 
 .testimonials-slider-boxes {
   outline: 0; }
+  .testimonials-slider-boxes:focus .testimonials-box__text, .testimonials-slider-boxes:focus .testimonials-box-authors__name, .testimonials-slider-boxes:focus .testimonials-box-authors__position {
+    text-shadow: 0 0 12px rgba(255, 255, 255, .5); }
 
 .testimonials-box {
   max-width: 37.5rem; }
@@ -375,7 +379,25 @@ body {
 .offers-box {
   border: 1px solid #e0e0e0;
   max-width: 16.875rem;
-  margin: 0 auto; }
+  margin: 0 auto;
+  outline: 0; }
+  .offers-box:focus .offers-box-status {
+    border-bottom: 1px solid #ffffff; }
+  .offers-box:focus .offers-box-payament {
+    background: #008ed6;
+    border-bottom: 1px solid #ffffff;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease; }
+    .offers-box:focus .offers-box-payament .offers-box-payment__price {
+      color: #fafafa; }
+    .offers-box:focus .offers-box-payament .offers-box-payment__month {
+      color: #fafafa; }
+  .offers-box:focus .btn--order {
+    background: #008ed6;
+    color: #ffffff;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    border: 1px solid #ffffff; }
   .offers-box:nth-child(1n+2) {
     margin-top: 1.875em; }
   .offers-box:hover {
@@ -532,6 +554,8 @@ body {
     padding-left: 1em; }
   .social-media-icon:hover {
     color: #008ed6; }
+  .social-media-icon:focus {
+    color: #008ed6; }
 
 .social-media-icon:before {
   font-family: 'FontAwesome'; }
@@ -546,7 +570,9 @@ body {
   content: '\f099'; }
 
 .facebook:before {
-  content: '\f39e'; }
+  content: '\f09a';
+  font-size: 20px;
+  font-size: 1.25rem; }
 
 .linkedin:before {
   content: '\f0e1'; }
@@ -621,6 +647,8 @@ body {
   position: relative;
   display: block; }
   .menu-item__link:hover .menu-pointer:before, .menu-item__link:hover .menu-pointer:after {
+    width: 50%; }
+  .menu-item__link:focus .menu-pointer:before, .menu-item__link:focus .menu-pointer:after {
     width: 50%; }
 
 .menu-pointer {
@@ -702,9 +730,19 @@ body {
 .btn--view {
   --color: transparent;
   border: 1px solid rgba(255, 255, 255, .2); }
+  .btn--view:focus {
+    -webkit-box-shadow: 0px 0px 6px rgba(255, 255, 255, .2);
+            box-shadow: 0px 0px 6px rgba(255, 255, 255, .2); }
 
 .btn--message {
   background-color: #008ed6; }
+
+.btn--download:focus, .btn--message:focus {
+  -webkit-box-shadow: 0px 0px 6px #008ed6;
+          box-shadow: 0px 0px 6px #008ed6; }
+
+button::-moz-focus-inner {
+  border: 0; }
 
 .input {
   border: 1px solid rgba(255, 255, 255, .2);
@@ -718,6 +756,9 @@ body {
   display: block;
   width: 100%;
   padding: 0 1.0625rem; }
+  .input:focus {
+    -webkit-box-shadow: 0px 0px 6px rgba(255, 255, 255, .2);
+            box-shadow: 0px 0px 6px rgba(255, 255, 255, .2); }
 
 .input--message {
   height: 8.75em;

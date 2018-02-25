@@ -44,6 +44,14 @@ display: block;
       }
     }
   }
+
+  &:focus{
+    .menu-pointer{
+      &:before, &:after{
+      width: 50%;
+      }
+    }
+  }
 }
 
 .menu-pointer{

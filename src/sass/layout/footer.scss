@@ -30,6 +30,10 @@ transition: all 0.25s ease;
   &:hover{
   color: var(--blue-color);
   }
+
+  &:focus{
+  color: var(--blue-color);
+  }
 }
 
 .social-media-icon:before{
@@ -49,7 +53,8 @@ content: '\f099';
 }
 
 .facebook:before{
-content: '\f39e';
+content: '\f09a';
+font-size: rem(20);
 }
 
 .linkedin:before{
