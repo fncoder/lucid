@@ -61,7 +61,7 @@ var hashObj = {
 };
 
 var navigation = function navigation(hashObj) {
-	var menu = document.querySelector('.menu');
+	var menu = document.querySelector('.navigation');
 	var hamburger = document.querySelector('.hamburger');
 
 	$('.menu-item__link').click(function (e) {

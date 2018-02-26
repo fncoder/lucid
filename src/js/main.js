@@ -61,7 +61,7 @@ const hashObj = {
 };
 
 const navigation = (hashObj) =>{
-	const menu = document.querySelector('.menu');
+	const menu = document.querySelector('.navigation');
 	const hamburger = document.querySelector('.hamburger');
 
 	$('.menu-item__link').click(function (e) {
